@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>PhotoRec Open House Demo</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/blood.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="linear">
+          <p>
+            Have you ever wondered how forensic analysts are able to recover
+            deleted files on your computer?
+          </p>
+        </section>
+        <section>
+          <p>
+            Or simply deleted a file by accident <b>and</b> emptied the Recycle
+            Bin, then cursed at yourself but still couldn't figure out how to
+            get it back?
+          </p>
+        </section>
+        <section data-transition="linear">
+          <p>
+            In this demo, we will be showing you how to perform basic file
+            recovery, which is a branch of digital forensics, with the help of
+            PhotoRec.
+          </p>
+        </section>
+        <section>
+          <p>
+            Not only can this tool recover <b>lost pictures</b> from digital
+            camera memory, but it can also recover lost files of more than 480
+            formats, which include <b>zip, txt, pdf and html</b>, from a wide
+            range of media, such as
+            <b>hard disks, CD-ROMs, USB memory drives and dd raw images</b>.
+          </p>
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Step 1: Run the command photorec_win.exe [disk_image_name].
+          </p>
+          <img src="assets/a1.png" />
+          <small>Ensure that Desktop is the current working directory.</small>
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Step 2: Select the disk image.
+          </p>
+          <img src="assets/a2.png" />
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Step 3: Select the source partition.
+          </p>
+          <img src="assets/a3.png" />
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Step 4: Select the file system type.
+          </p>
+          <img src="assets/a4.png" />
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Step 5: Select a destination to save the recovered files to.
+          </p>
+          <img src="assets/a5.png" />
+        </section>
+        <section style="text-align: left;">
+          <p>
+            Once the files have been recovered, you will see the following
+            screen.
+          </p>
+          <img src="assets/a6.png" />
+        </section>
+        <section>
+          <p>
+            Congratulations! You've recovered the deleted files successfully.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+      Reveal.configure({
+        autoSlide: 5000
+      });
+    </script>
+  </body>
+</html>
